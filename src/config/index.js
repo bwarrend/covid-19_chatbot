@@ -1,6 +1,6 @@
 export default {
-    endpoint: 'https://fortesting-iubj.core.ushaflow.io', // <- enter your gateway URL here
-    endpoint_real: 'https://applied-might-293623.core.ushaflow.io',
+    endpoint_test: 'https://fortesting-iubj.core.ushaflow.io', // <- enter your gateway URL here
+    endpoint: 'https://applied-might-293623.core.ushaflow.io',
     muted: false, // <- mute microphone at start
     start_suggestions: [], // <- array of suggestions, displayed at the start screen
     fallback_lang: 'en', // <- fallback language code, if history mode or network is unavailable

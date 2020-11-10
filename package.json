@@ -1,5 +1,5 @@
 {
-  "name": "dialogflow-web-v2",
+  "name": "covid-19-chatbot",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --open",

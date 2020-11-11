@@ -16,8 +16,8 @@ Vue.prototype.history = () => {
     try {
         sessionStorage.getItem('check')
         return true
-    }
-
+    } 
+    
     catch {
         return false
     }

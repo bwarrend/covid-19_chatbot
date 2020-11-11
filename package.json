@@ -4,7 +4,8 @@
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "node scripts/gh-pages-deploy.js"
   },
   "dependencies": {
     "audio-recorder-polyfill": "^0.4.0",
@@ -27,6 +28,7 @@
     "eslint-plugin-vue": "^7.1.0",
     "sass": "^1.28.0",
     "sass-loader": "^10.0.4",
-    "vue-template-compiler": "^2.6.12"
+    "vue-template-compiler": "^2.6.12",
+    "execa": "latest"
   }
 }

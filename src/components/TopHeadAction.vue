@@ -6,9 +6,7 @@
             :aria-label="title">
             <i aria-hidden="true" class="material-icons">{{icon}}</i>
         </button>
-        <div class="zoom-i">CTRL+SCROLL</div>
-        <div class="zoom-i">   to</div>
-        <div class="zoom-i">zoom</div>
+
         
     </div>
 </template>
@@ -30,9 +28,6 @@
 
     &:hover
         padding-right: 20px
-.zoom-i
-    text-align: center
-    color: white
 
 </style>
 

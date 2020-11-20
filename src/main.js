@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-
+import moment from 'moment'
 import config from './config'
 import translations from './translations/translations.json'
 import { register_service_worker } from './utils'
@@ -28,6 +28,12 @@ Vue.prototype.lang = () => {
     if (Vue.prototype.history()) return sessionStorage.getItem('lang') || config.fallback_lang
     return config.fallback_lang
 }
+
+Vue.filter('formatDate', function(value) {
+    if (value) {
+      return moment(String(value)).format('MM/DD/YYYY hh:mm')
+    }
+});
 
 /* (global) Debug mode */
 Vue.prototype.debug = () => process.env.NODE_ENV == 'development'

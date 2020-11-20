@@ -6,9 +6,12 @@
 
         <!-- Agent Title -->
         <div class="agent-title">COVID-19 Chat Bot</div>
+        
 
         <!-- Agent Description -->
         <div class="agent-description">Any questions about COVID-19?</div>
+        <div class="agent-description">{{ getDate() | formatDate }}</div>
+
 
         <!-- Language picker, if your Agent supports more than one language -->
         <div v-if="agent.supportedLanguageCodes && agent.supportedLanguageCodes.length > 0" class="language-picker">
@@ -69,9 +72,16 @@
 
 <script>
 import * as langs from 'langs'
+import moment from 'moment'
 
 export default {
     name: 'WelcomeView',
+    methods:{
+        getDate: function(){
+            var currentDate = new Date()
+            return currentDate.toString()
+        }
+    },
     filters: {
         /* This filter turns language code to the local language name using the langs dependency (example "en" -> "English") */
         toLang(code){
